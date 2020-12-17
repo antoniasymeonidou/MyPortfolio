@@ -1,15 +1,15 @@
-## My Personal Portfolio
+### My Personal Portfolio
 
 <img src="https://docs.google.com/drawings/d/e/2PACX-1vT6bqcP1FD6bcaLDDBhna8QRqjayYvg8xuz5oaKmUyqwSshaTIW0mHNJEgzX5DpsdR_a8s7dyksTMlp/pub?w=650&amp;h=600">
 
-## Link
+### Link
 
 [https://my-portfolio-six.vercel.app/]
 
 ### Techonologies
 
-# Angular
-# Node.js
+- Angular
+- Node.js
 
 ### Project directory:
 
