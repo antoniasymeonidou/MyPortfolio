@@ -8,8 +8,8 @@
 
 ### Techonologies
 
-Angular
-Node.js
+# Angular
+# Node.js
 
 ### Project directory:
 
