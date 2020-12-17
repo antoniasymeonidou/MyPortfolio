@@ -1,6 +1,6 @@
 ## My Personal Portfolio
 
-![Screenshot]("https://docs.google.com/drawings/d/e/2PACX-1vT6bqcP1FD6bcaLDDBhna8QRqjayYvg8xuz5oaKmUyqwSshaTIW0mHNJEgzX5DpsdR_a8s7dyksTMlp/pub?w=960&h=720")
+![Screenshot](https://docs.google.com/drawings/d/e/2PACX-1vQ7oxq9Z_IUQOBaVpuAk2LBNiFZv9lsDgAXsrUzVD_jj9keBCic_6DCgo0ezachkVc5HkXOkOMQuBk2/pub?w=818&h=448)
 
 ### Techonologies
 
