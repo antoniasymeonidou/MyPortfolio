@@ -1,4 +1,52 @@
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!DOCTYPE html>
+<html lang="en" [attr.color-mode]="color_mode">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="app.component.css" />
+  </head>
+  
+  <svg style="display: none;">
+    <symbol viewBox="0 0 24 24" id="moon">
+      <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+    </symbol>
+    <symbol viewBox="0 0 24 24" id="sun">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </symbol>
+  </svg>
+  <main class="color-mode {{color_mode}}">
+  
+        <button *ngIf="dark_mode"
+          (click)="toggle_dark_mode()"
+          class="color-mode__btn light--hidden"
+          aria-label="Toggle light mode"
+        >
+          <svg aria-hidden="true">
+            <title>Light Mode</title>
+            <use href="#sun"></use>
+          </svg>
+        </button>
+        <button *ngIf="!dark_mode" (click)="toggle_dark_mode()"
+          class="color-mode__btn dark--hidden"
+          aria-label="Toggle dark mode"
+        >
+
+          <svg aria-hidden="true">
+            <title>Dark Mode</title>
+            <use href="#moon"></use>
+          </svg>
+        </button>
+      
+
+
 <style>
   @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
   :host {
@@ -9,7 +57,7 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
   }
-
+  @import url("./app.component.scss");
 
   h1,
   h2,
@@ -24,167 +72,7 @@
     margin: 0;
   }
 
-  .basic_image{
-    border: 5px solid #eea112;
-  }
-  .spacer {
-    flex: 1;
-  }
-
-  .toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    background-color: #eea112;
-    color: white;
-    font-weight: 600;
-  }
-
-  .toolbar img {
-    margin: 0 16px;
-  }
-
-  .toolbar #twitter-logo {
-    height: 30px;
-    margin: 0 10px;
-  }
-
-  .toolbar #twitter-logo:hover {
-    opacity: 0.8;
-  }
-
-  .content {
-    display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-mark.purple {
-    color:#af0fcf;
-    background: none;
-}
-
-mark.cyan {
-    color:#00a098;
-    background: none;
-}
-
-mark.pink {
-    color:#cf0fbf;
-    background: none;
-}
-
-mark.green {
-    color:#4da704;
-    background: none;
-}
-  .card svg.material-icons path {
-    fill: rgb(136, 136, 136);
-  }
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-  }
-
-  .card {
-    font-size: x-large;
-    color: black;
-    border-radius: 4px;
-    border: 5px solid  #eea112;
-    background-color: ;
-    height: 20px;
-    width: 200px;
-    margin: 0 8px 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 24px;
-  }
-
-  .card-container .card:not(:last-child) {
-    margin-right: 0;
-  }
-
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-  }
-
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: rgb(105, 103, 103);
-  }
-
-  .card.highlight-card {
-    box-shadow: 0 4px 17px rgba(0, 0, 0, 0.35);
-    background-color:  rgb(105, 103, 103);
-    color: white;
-    font-weight: 500;
-    border: none;
-    width: auto;
-    min-width: 10%;
-    position: relative;
-  }
-
-  .card.card.highlight-card span {
-    margin-left: 60px;
-  }
-
-  a,
-  a:visited,
-  a:hover {
-    color: #1976d2;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #125699;
-  }
-
-  .circle-link {
-    height: 40px;
-    width: 40px;
-    margin: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-  }
-
-  footer {
-    margin-top: 8px;
-    display: flex;
-    align-items: center;
-    line-height: 10px;
-  }
-
-  footer a {
-    display: flex;
-    align-items: center;
-  }
-
+  
   /* Responsive Styles */
   @media screen and (max-width: 767px) {
 
@@ -216,7 +104,7 @@ mark.green {
 <!-- Toolbar -->
 <div class="toolbar" role="banner">
   <img width="40">
-  <span>Antonia Symeonidou</span>
+  <span>Welcome</span>
     <div class="spacer"></div>
     <a target="_blank" rel="noopener" href="https://twitter.com/NanouuSymeon" title="Twitter">
       <svg id="twitter-logo" height="20" data-name="Logo" xmlns="http://www.w3.org/2000/svg" viewBox="40 20 300 400">
@@ -369,7 +257,12 @@ mark.green {
       </svg>
     </a>
   </div>
+  <script src="app.js"></script>
   
   <footer> <br>
     ©Copyright &nbsp; 2020
   </footer>
+  </div>
+
+</main>
+  </html>
