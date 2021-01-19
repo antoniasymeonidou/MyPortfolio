@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 
 :root[color-mode="light"] .light--hidden{
   
@@ -35,8 +36,11 @@
 }
 
 img {
-    border: 7px solid  #073b4c;
-    border-radius: 5px;
+  width: 350px;
+  height: 250px;
+  margin-top: 2em;
+  border: none;
+  position: relative;
   }
 
 .toolbar {
@@ -47,7 +51,7 @@ img {
     height: 50px;
     display: flex;
     align-items: center;
-    background-color: #073b4c;
+    background-color: #946E83;
     color: "";
     font-weight: 600;
 }
@@ -66,8 +70,8 @@ img {
 
   .content {
     display: flex;
-    margin: 82px auto 32px;
-    padding: 0 16px;
+    margin: 0px auto 0px;
+   
     max-width: 960px;
     flex-direction: column;
     align-items: center;
@@ -75,25 +79,24 @@ img {
 
 
 mark.purple {
-    color:#118ab2;
-    background-color: white;
-    border: 2px solid  #073b4c;
+    color:#550C18;
 }
 
   .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    margin-top: 16px;
+    margin-top: 5px;
   }
 
   .card {
+    
     font-size: x-large;
     color: black;
     border-radius: 4px;
-    border: 5px solid  #ef476f;
-    background-color:   #06d060;
-    height: 20px;
+    border: 5px solid #946E83;;
+    background-color:   #DDF8E8;
+    height: 15px;
     width: 250px;
     margin: 0 8px 16px;
     padding: 16px;
@@ -102,11 +105,11 @@ mark.purple {
     justify-content: center;
     align-items: center;
     transition: all 0.2s ease-in-out;
-    line-height: 24px;
+    line-height: 20px;
   }
 
   .card-container .card:not(:last-child) {
-    margin-right: 0;
+    margin-right: 10px;
   }
 
   .card-container .card:not(.highlight-card) {
@@ -122,33 +125,27 @@ mark.purple {
     fill: black;
   }
 
-  .card.highlight-card {
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
-    background-color: #ef476f;
-    color: white;
-    font-weight: 500;
-    border: none;
-    width: auto;
-    min-width: 10%;
-    position: relative;
-  }
 
-  .card.card.highlight-card span {
-    margin-left: 60px;
+  .card.card.highlight-card span { /*face layer pink */
+    margin-left: 100px;
   }
 
   a,
   a:visited,
   a:hover {
-    color: #1976d2;
+    color: #118ab2;
     text-decoration: none;
   }
 
   a:hover {
-    color: #ff70a6;
+    color: #118ab2;
   }
 
   .circle-link {
+    background-color: white;
+    border-radius: 7px;
+    border: 15px solid  #443730;
+    border-color: white;
     height: 40px;
     width: 40px;
     margin: 8px;
@@ -170,18 +167,38 @@ html.dark {
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
 }
 
 html.light {
-  background-color:  #ffd166;
+  background-image: linear-gradient(175deg, rgba(0,0,0,0) 95%, #8da389 95%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 95%, #8da389 95%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 90%, #b4b07f 90%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 92%, #b4b07f 92%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 85%, #c5a68e 85%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 89%, #c5a68e 89%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 80%, #ba9499 80%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 86%, #ba9499 86%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 75%, #9f8fa4 75%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 83%, #9f8fa4 83%),
+                    linear-gradient(175deg, rgba(0,0,0,0) 70%, #74a6ae 70%),
+                    linear-gradient( 85deg, rgba(0,0,0,0) 80%, #74a6ae 80%);
+  background-color: #CDD5D1;
   position: absolute;
     top: 0;
     left: 0;
     right: 0;
+    bottom: 0;
+    padding: 0;
+    margin: 0;
 }
 
-.typewriter p {
-  font-family: 'Abril Fatface', cursive;
+.typewriter {
+  margin-top: 1em;
+  font-size: 30px;
+  font-family: 'Patrick Hand SC', cursive;
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
@@ -192,14 +209,43 @@ html.light {
     blink-caret .75s step-end infinite;
 }
 
+@media (max-width: 1400px) {
+  .typewriter {
+    font-size: 10px;
+    line-height: 15px;
+  }
+}
+
+@media (max-width: 700px) {
+  .typewriter {
+    font-size: 10px;
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 499px) {
+  .typewriter {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
+
+@media (max-width: 350px) {
+.typewriter {
+    font-size: 10px;
+    line-height: 20px;
+  }
+}
+
 /* The typing effect */
 @keyframes typing {
   from { width: 0 }
-  to { width: 100% }
+  to { width: 75% }
 }
 
 /* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
-  50% { border-color: orange; }
+  75% { border-color: rgb(255, 0, 170); }
 }

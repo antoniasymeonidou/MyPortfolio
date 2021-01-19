@@ -2,7 +2,7 @@
 <html lang="en" [attr.color-mode]="color_mode" class="color-mode {{color_mode}}">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="app.component.css" />
   </head>
   
@@ -25,9 +25,9 @@
         
       
 <style>
-  @import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Alegreya+Sans+SC:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
   :host {
-    font-family: 'Abril Fatface', cursive;
+    font-family: 'Patrick Hand SC', cursive;
     font-size: 20px;
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
@@ -40,29 +40,14 @@
   h3,
   h4,
   h5,
-  h6 {
-    margin: 0 ;
+  h6,
+  p {
+    margin: 0px 10px 0px 10px ;
+    font-family: 'Patrick Hand SC', cursive;
   }
 
-  /* Responsive Styles */
-  @media screen and (max-width: 767px) {
-
-    .card-container > *:not(.circle-link) ,
-    .terminal {
-      width: 100%;
-    }
-
-    .card:not(.highlight-card) {
-      height: 16px;
-      margin: 8px 0;
-    }
-
-    .card.highlight-card span {
-      margin-left: 72px;
-    }
-  }
 </style>
-
+<body>
 <div class="toolbar" role="banner">
     <div class="spacer"></div>
     <a target="_blank" rel="noopener" href="https://twitter.com/NanouuSymeon" title="Twitter">
@@ -106,24 +91,15 @@
 </div>
 
 <div class="content" role="main">
-  <br>
-  <div class="card highlight-card card-small">
+  
+  <div >
     <img
-    width="130"
-    src="https://media-exp1.licdn.com/dms/image/C4D03AQH2qzFIRS_9Hw/profile-displayphoto-shrink_200_200/0/1593089093615?e=1613606400&v=beta&t=Fp7LuK60SoChDTIjwd7gAVHIZPo24CIBwUE9x9BOo7s"
+    width="400"
+    src="https://docs.google.com/drawings/d/e/2PACX-1vSl5SQtiWjAbGFkyf7Ef-AD4CmeZJQgKe_DrB9eNT9CCtJKezuJFLhy3Fk6Aa4l38tQ8kwbNdNHOB9f/pub?w=960&amp;h=720"
   />
-    <span></span>
-
   </div>
-
-  <br><br>
-  <div class="typewriter">
-  <p>
-  Hi there! My name is Antonia and I am a <mark class="purple">Coding Tutor</mark> for Kids and Teens.</p>
-    <p>
-  I am a  <mark class="purple"> Junior Developer</mark> with a passion for FrontEnd  Designing.</p>
-  <p>
- I believe that  every child or teen need to understand that coding is an important skill in life!</p></div>
+  <div class="typewriter"> My Name is Antonia. I am a Coding Tutor for teens...<br></div>
+  
   <div class="card-container">
     <a class="card" target="_blank" rel="noopener">
       <span> 🤖 &nbsp;Coding Exercises</span>
@@ -131,12 +107,9 @@
     <a class="card" target="_blank" rel="noopener">
       <span> ✍🏻 &nbsp;Blog</span>
     </a>
-   
-
     <a class="card" target="_blank" rel="noopener">
-      <span> 📩 &nbsp;Contact Me</span>
+      <span> 💁 &nbsp;About Me</span>
     </a>
-
   </div>
 
   <!-- Next Steps -->
@@ -227,9 +200,9 @@
       </svg>
     </a>
   </div>
-  <footer> <br>
-    ©Copyright &nbsp; Nanouu
+</div>
+</body>
+  <footer class="card-container"> <br>
+   Created By ©Copyright Nanouu
   </footer>
-  </div>
-
-  </html>
+</html>
