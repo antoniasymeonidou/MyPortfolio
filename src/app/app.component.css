@@ -1,164 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 
 :root[color-mode="light"] .light--hidden{
-  
   display: none;
 }
 
 :root[color-mode="dark"] .dark--hidden{
   display: none;
 }
-
-.color-mode__btn {
-  margin-left: 10em;;
-  padding: 1rem;
-  margin: 0 10px 20px 87em;
-  cursor: pointer;
-  background: none;
-  border: none;
-}
-
-.color-mode__btn svg {
-  width: 30px;
-  height: 30px;
-  fill: none;
-  stroke: white;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 1.5px;
-  margin-top: 20px;
-}
-
-.color-mode__btn:hover svg,
-.color-mode__btn:focus svg, .color-mode__btn:focus {
-  outline: none;
-  fill: #fff7d6;
-}
-
-img {
-  width: 350px;
-  height: 250px;
-  margin-top: 2em;
-  border: none;
-  position: relative;
-  }
-
-.toolbar {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    background-color: #946E83;
-    color: "";
-    font-weight: 600;
-}
-
-  .toolbar #twitter-logo {
-    width: 30px;
-    height: 30px;
-    margin: 0px 10px;
-    padding-left: 10px;
-
-  }
-
-  .toolbar #twitter-logo:hover {
-    opacity: 0.8;
-  }
-
-  .content {
-    display: flex;
-    margin: 0px auto 0px;
-   
-    max-width: 960px;
-    flex-direction: column;
-    align-items: center;
-  }
-
-
-mark.purple {
-    color:#550C18;
-}
-
-  .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 5px;
-  }
-
-  .card {
-    
-    font-size: x-large;
-    color: black;
-    border-radius: 4px;
-    border: 5px solid #946E83;;
-    background-color:   #DDF8E8;
-    height: 15px;
-    width: 250px;
-    margin: 0 8px 16px;
-    padding: 16px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    transition: all 0.2s ease-in-out;
-    line-height: 20px;
-  }
-
-  .card-container .card:not(:last-child) {
-    margin-right: 10px;
-  }
-
-  .card-container .card:not(.highlight-card) {
-    cursor: pointer;
-  }
-
-  .card-container .card:not(.highlight-card):hover {
-    transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
-  }
-
-  .card-container .card:not(.highlight-card):hover .material-icons path {
-    fill: black;
-  }
-
-
-  .card.card.highlight-card span { /*face layer pink */
-    margin-left: 100px;
-  }
-
-  a,
-  a:visited,
-  a:hover {
-    color: #118ab2;
-    text-decoration: none;
-  }
-
-  a:hover {
-    color: #118ab2;
-  }
-
-  .circle-link {
-    background-color: white;
-    border-radius: 7px;
-    border: 15px solid  #443730;
-    border-color: white;
-    height: 40px;
-    width: 40px;
-    margin: 8px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    transition: 0.1s ease-out;
-  }
-
-  .circle-link:hover {
-    transform: translateY(-0.25rem);
-  }
 
 html.dark {
   background-color: black;
@@ -194,7 +42,160 @@ html.light {
     padding: 0;
     margin: 0;
 }
+/* Day/Night Button */
+.color-mode__btn {
+  margin-left: 10em;;
+  padding: 1rem;
+  margin: 0 10px 20px 87em;
+  cursor: pointer;
+  background: none;
+  border: none;
+}
 
+.color-mode__btn svg {
+  width: 30px;
+  height: 30px;
+  fill: none;
+  stroke: white;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 1.5px;
+  margin-top: 20px;
+}
+
+.color-mode__btn:hover svg,
+.color-mode__btn:focus svg, .color-mode__btn:focus {
+  outline: none;
+  fill: #fff7d6;
+}
+
+/* Basic Center Image */
+img {
+  width: 350px;
+  height: 250px;
+  margin-top: 2em;
+  border: none;
+  position: relative;
+  }
+
+/* Top Toolbar  */
+
+.toolbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  background-color: #946E83;
+  color: "";
+  font-weight: 600;
+}
+
+.toolbar #twitter-logo {
+  width: 30px;
+  height: 30px;
+  margin: 0px 10px;
+  padding-left: 10px;
+
+  }
+
+.toolbar #twitter-logo:hover {
+  opacity: 0.8;
+}
+
+/* Basic container */
+html {
+  line-height: 1.15;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+}
+
+.content {
+  display: flex;
+  margin: 0px auto 0px;
+  width: auto;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Cards */
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 5px;
+}
+
+.card {
+  font-size: x-large;
+  color: black;
+  border-radius: 4px;
+  border: 5px solid whitesmoke;
+  background-color:   #DDF8E8;
+  height: 10px;
+  width: 250px;
+  margin: 0 8px 16px;
+  padding: 16px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-in-out;
+  line-height: 20px;
+  }
+ 
+  .card-container .card:not(:last-child) {
+    margin-right: 10px;
+  }
+
+  .card-container .card:not(.highlight-card) {
+    cursor: pointer;
+  }
+
+  .card-container .card:not(.highlight-card):hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+  }
+
+  a,
+  a:visited,
+  a:hover {
+    color: #000000;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: #000000;
+  }
+
+  /* Skills */
+.circle-link {
+  background-color: white;
+  border-radius: 7px;
+  border: 15px solid  #443730;
+  border-color: white;
+  height: 40px;
+  width: 40px;
+  margin: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.1s ease-out;
+}
+
+.circle-link:hover {
+  transform: translateY(-0.25rem);
+}
+
+/* Typewriter Sentence */
 .typewriter {
   margin-top: 1em;
   font-size: 30px;
@@ -238,13 +239,11 @@ html.light {
   }
 }
 
-/* The typing effect */
 @keyframes typing {
   from { width: 0 }
   to { width: 75% }
 }
 
-/* The typewriter cursor effect */
 @keyframes blink-caret {
   from, to { border-color: transparent }
   75% { border-color: rgb(255, 0, 170); }
