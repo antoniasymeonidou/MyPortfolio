@@ -1,21 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Patrick+Hand+SC&display=swap');
 
-@media screen and (max-width: 600px) {
-  .circle-link, .typewriter, .card-container {
-    width: 100%;
-    margin-top: 0;
-  }
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
-
-* {
-    box-sizing: border-box; 
-  }
-  .container{
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-  }
 
 html,body {
   width: 100%;
@@ -238,8 +229,6 @@ img {
     typing 3.5s steps(40, end),
     blink-caret .75s step-end infinite;
 }
-
-
 
 @keyframes typing {
   from { width: 0 }

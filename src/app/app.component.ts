@@ -1,10 +1,12 @@
 import { Component } from '@angular/core';
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css', 'typing/typing.component.scss'],
 })
+
 export class AppComponent {
   title = 'my-website';
   
@@ -20,9 +22,7 @@ export class AppComponent {
     this.dark_mode = !this.dark_mode;
     window.localStorage.setItem("dark_mode", JSON.stringify(this.dark_mode))
     this.setColourMode()
-  }
-
-  
+  }  
 
   private setColourMode() {
     if (this.dark_mode)
@@ -31,3 +31,6 @@ export class AppComponent {
       this.color_mode = "light"
   }
 }
+
+
+
