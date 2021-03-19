@@ -206,6 +206,31 @@ html.light {
   padding-bottom: 5px;
   transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
+
+.button4 {
+  width: 5em;
+  text-align: center;
+  margin: .5em;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  font-family: 'VT323', 'arial';
+  background: none;
+  border: none;
+  outline: none;
+  font-size: 30px;
+  padding: 10px;
+  box-shadow: 5px 0px #13d433, -5px 0px #13d433, 0px 5px  #13d433, 0px -5px #13d433, 0px 15px #93f18b, -5px 10px  #93f18b, 5px 10px  #93f18b;
+  background: #13d433;
+  color: #eee;
+  transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
+}
+
+.button4:active {
+  box-shadow: 5px 5px white;
+  padding-top: 15px;
+  padding-bottom: 5px;
+  transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
+}
   .card-container .card:not(:last-child) {
     margin-right: 10px;
   }
@@ -513,6 +538,7 @@ html.light {
 }
 
 .glasses-1 {
+  z-index: 10000;
   position: absolute;
   top: 23%;
   width: 45%;
@@ -523,6 +549,7 @@ html.light {
 }
 
 .glasses-2 {
+  z-index: 10000;
   position: absolute;
   top: 23%;
   width: 45%;
@@ -540,4 +567,12 @@ html.light {
 95% {
     transform: scale(1, 1);
 }
+}
+
+.center {
+  font-size: 30px;
+  text-align: center;
+  margin: auto;
+  width: 60%;
+  padding: 10px;
 }
