@@ -1,15 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Luckiest+Guy&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Orelega+One&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Dekko|Lato:900|Rock+Salt");
+
+
 html, body{
-font-size: 1.5rem;
+font-size: 2.5rem;
 background-color: #0E282E; //basic color page for navbar and footer
-font-family: 'VT323', 'arial';
-}
-
-a {
-color: #00d1b2;
-}
-
-a:hover {
-color: #00d1b2;
+font-family: 'Nanum Pen Script', cursive;
 }
 
 section{
@@ -18,24 +16,24 @@ padding-bottom: 3rem;
 }
 
 .section-1 {
-  
-  background-color:white;
-  padding: 2rem;
+background-color: hsl(164, 61%, 65%);
+padding: 2rem;
 }
 
 .section-2 {
-background-color:#F0B1DC;
+background-color: hsl(264, 51%, 71%);
 padding: 2rem;
 }
 
 .section-3 {
-background-color: #D95C9B;
+background-color: hsl(55, 97%, 85%);
 padding: 2rem;
 }
 
 .section-4 {
-  background-color: #0E282E; 
-  padding: 0.2rem;
+font-size: 2rem;
+background-color: #0E282E; 
+padding: 0.2rem;
 }
 
 .section-5 {
@@ -53,9 +51,10 @@ color: #fff;
 }
 
 .avatar1{
+
 width: 30%;
 height:20%;
-border: 2px solid #0E282E;
+
 }
 
 .intro-description{
@@ -79,8 +78,11 @@ text-align: justify;
 }
 
 .box {
+display: flex;
+justify-content: center;
+align-items: center;
 background-color: transparent;
-border: 2px solid #59032E;
+border: 2px solid  #034659;
 }
 
 .title {
@@ -90,13 +92,14 @@ margin-bottom: 2rem;
 }
 
 .intro {
-font-size: 2rem;
+font-size: 2.5rem;
 color: #0E282E;
+flex-wrap: wrap;
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: justify;
-width: 80%;
+width: 100%;
 margin: 0 auto;
 }
 
@@ -124,14 +127,14 @@ background-color: #fff;
 }
 
 .circle-link {
-  position: relative;
-  height: 160px;
-  width: 160px;
-  margin: 40px;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  }
+position: relative;
+height: 160px;
+width: 160px;
+margin: 40px;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+}
 
 .button1 {
 width: 5em;
@@ -139,11 +142,10 @@ text-align: center;
 margin: 1em;
 justify-content: space-between;
 flex-wrap: nowrap;
-font-family: 'VT323', 'arial';
 background: none;
 border: none;
 outline: none;
-font-size: 1.7em;
+font-size: 1em;
 box-shadow: 5px 0px #0db3e6, -5px 0px #0db3e6, 0px 5px  #0db3e6, 0px -5px  #0db3e6, 0px 15px #2979FF, -5px 10px #2A6CDA, 5px 10px #2A6CDA;
 background: #0db3e6;
 color: #eee;
@@ -163,11 +165,10 @@ text-align: center;
 margin: 1em;
 justify-content: space-between;
 flex-wrap: nowrap;
-font-family: 'VT323', 'arial';
 background: none;
 border: none;
 outline: none;
-font-size: 1.7em;
+font-size: 1em;
 box-shadow: 5px 0px #9709aa, -5px 0px #9709aa, 0px 5px #9709aa, 0px -5px #9709aa, 0px 15px#d3a3da, -5px 10px #d3a3da, 5px 10px #d3a3da;
 background:#9709aa;
 color: #eee;
@@ -188,11 +189,10 @@ text-align: center;
 margin: 1em;
 justify-content: space-between;
 flex-wrap: nowrap;
-font-family: 'VT323', 'arial';
 background: none;
 border: none;
 outline: none;
-font-size: 1.7em;
+font-size: 1em;
 box-shadow: 5px 0px #fa891e, -5px 0px #fa891e, 0px 5px #fa891e, 0px -5px #fa891e, 0px 15px #f3c889, -5px 10px  #f3c889, 5px 10px #f3c889;
 background:#fa891e;
 color: #eee;
@@ -206,16 +206,78 @@ padding-top: 15px;
 padding-bottom: 5px;
 transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
-@keyframes move_wave {
-  0% {
-      transform: translateX(0) translateZ(0) scaleY(1)
-  }
-  50% {
-      transform: translateX(-25%) translateZ(0) scaleY(0.55)
-  }
-  100% {
-      transform: translateX(-50%) translateZ(0) scaleY(1)
-  }
+
+.mark {
+background: transparent;
+
+text-shadow: 2px 2px 3px black;
+transition: transform .7s ease-in-out;
+color: white;
+}
+
+.mark:hover {
+text-decoration: underline wavy #88ff88;
+background: transparent;
+transform: rotate(360deg);
+color: black;
+
+}
+
+.acontainer {
+
+width: 10rem;
+height: 10rem;
+border-radius: 2%;
+}
+
+.levels:hover {
+position: relative;
+color: mix(#fff, #fadadd, 10%);
+  font-size: 8rem;
+text-shadow: 
+  0.02em 0.02em 0 mix(#fff, #e91e63, 20%),
+  0.04em 0.04em 0 mix(#fff, #F1F0B7, 20%),
+  0.06em 0.06em 0 mix(#fff, #d8bfd8, 20%),
+  0.08em 0.08em 0 mix(#fff, #a4dded, 20%);
 }
 
 
+
+.fire:hover {
+color: rgb(197, 4, 155);
+outline: none;
+cursor: pointer;
+animation: 2s amazing infinite alternate linear;
+}
+
+.fire {
+text-shadow: 2px 2px 3px black;
+color: white;
+}
+@keyframes amazing {
+0%   { 
+  text-shadow: 0 0 20px crimson,
+  0 0 10px rgb(197, 4, 155),
+  10px -20px 0 yellow; 
+}
+25%   { 
+  text-shadow: 0 0 20px crimson, 
+  0 0 20px rgb(197, 4, 155),
+  -10px -20px 0 yellow; 
+}
+50%   { 
+  text-shadow: 0 0  20px crimson, 
+  0 0 10px rgb(197, 4, 155),
+  10px -20px 0 yellow; 
+}
+75%   { 
+  text-shadow: 0 0 20px crimson, 
+  0 0 20px rgb(197, 4, 155),
+  -10px -20px 0 yellow; 
+}
+100%   { 
+  text-shadow: 0 0 20px crimson, 
+  0 0 10px rgb(197, 4, 155) ,
+  10px 20px 0 yellow; 
+}
+}
