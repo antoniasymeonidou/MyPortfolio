@@ -92,7 +92,7 @@ margin-bottom: 2rem;
 }
 
 .intro {
-font-size: 2.5rem;
+font-size: 3rem;
 color: #0E282E;
 flex-wrap: wrap;
 display: flex;
@@ -152,13 +152,6 @@ color: #eee;
 transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
 
-.button1:active {
-box-shadow: 5px 5px white;
-padding-top: 15px;
-padding-bottom: 5px;
-transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
-}
-
 .button2 {
 width: 5em;
 text-align: center;
@@ -172,14 +165,6 @@ font-size: 1em;
 box-shadow: 5px 0px #9709aa, -5px 0px #9709aa, 0px 5px #9709aa, 0px -5px #9709aa, 0px 15px#d3a3da, -5px 10px #d3a3da, 5px 10px #d3a3da;
 background:#9709aa;
 color: #eee;
-transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
-}
-
-.button2:active {
-box-shadow: 5px 5px white;
-background:  #dd1dad;
-padding-top: 15px;
-padding-bottom: 5px;
 transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
 
@@ -199,17 +184,8 @@ color: #eee;
 transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
 
-.button3:active {
-box-shadow: 5px 5px white;
-background: #f3c889;
-padding-top: 15px;
-padding-bottom: 5px;
-transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
-}
-
 .mark {
 background: transparent;
-
 text-shadow: 2px 2px 3px black;
 transition: transform .7s ease-in-out;
 color: white;
@@ -244,7 +220,7 @@ text-shadow:
 
 
 .fire:hover {
-color: rgb(197, 4, 155);
+color: #741b47ff;
 outline: none;
 cursor: pointer;
 animation: 2s amazing infinite alternate linear;
@@ -254,30 +230,60 @@ animation: 2s amazing infinite alternate linear;
 text-shadow: 2px 2px 3px black;
 color: white;
 }
+
 @keyframes amazing {
 0%   { 
-  text-shadow: 0 0 20px crimson,
-  0 0 10px rgb(197, 4, 155),
-  10px -20px 0 yellow; 
+  text-shadow: 
+  10px -20px 0 #9900ffff;
 }
 25%   { 
-  text-shadow: 0 0 20px crimson, 
-  0 0 20px rgb(197, 4, 155),
-  -10px -20px 0 yellow; 
+  text-shadow:
+  -10px -20px 0 #9900ffff;
 }
 50%   { 
-  text-shadow: 0 0  20px crimson, 
-  0 0 10px rgb(197, 4, 155),
-  10px -20px 0 yellow; 
+  text-shadow:
+  10px -20px 0 #9900ffff;
 }
 75%   { 
-  text-shadow: 0 0 20px crimson, 
-  0 0 20px rgb(197, 4, 155),
-  -10px -20px 0 yellow; 
+  text-shadow: 
+  -10px -20px 0 #9900ffff;
 }
 100%   { 
-  text-shadow: 0 0 20px crimson, 
-  0 0 10px rgb(197, 4, 155) ,
-  10px 20px 0 yellow; 
+  text-shadow: 
+  10px 20px 0 #9900ffff; 
 }
+}
+
+
+$name: pink, cyan, white, purple;
+$color: 4;
+$i: 10%;
+
+//main container
+svg {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  }
+
+.name {
+  stroke-dasharray: $i $i * ($color - 2);
+  stroke-width: 12px; //width of lines
+  animation: nameanimation 8s infinite linear;
+  fill: none;
+  stroke: white;
+
+  @for $value from 1 through $color {
+    $a: nth($name, $value);
+    &:nth-child(#{$value}) {
+      stroke: $a;
+      stroke-dashoffset: $i * $value;
+      }
+    }
+  }
+
+@keyframes nameanimation {
+  100% {
+    stroke-dasharray: 4 $i * $color* 4;
+  }
 }
