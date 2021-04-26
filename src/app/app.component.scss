@@ -192,10 +192,11 @@ color: white;
 }
 
 .mark:hover {
-text-decoration: underline wavy #88ff88;
+cursor: pointer;
+text-decoration: underline wavy  #9900ffff;
 background: transparent;
 transform: rotate(360deg);
-color: black;
+color: rgb(255, 254, 254);
 
 }
 
@@ -220,6 +221,7 @@ text-shadow:
 
 
 .fire:hover {
+  cursor: pointer;
 color: #741b47ff;
 outline: none;
 cursor: pointer;
@@ -254,36 +256,18 @@ color: white;
 }
 }
 
+.mix {
+  text-shadow: 2px 2px 3px black;
+  color: white;
+}
 
-$name: pink, cyan, white, purple;
-$color: 4;
-$i: 10%;
-
-//main container
-svg {
-  position: absolute;
-  width: 90%;
-  height: 90%;
-  }
-
-.name {
-  stroke-dasharray: $i $i * ($color - 2);
-  stroke-width: 12px; //width of lines
-  animation: nameanimation 8s infinite linear;
-  fill: none;
-  stroke: white;
-
-  @for $value from 1 through $color {
-    $a: nth($name, $value);
-    &:nth-child(#{$value}) {
-      stroke: $a;
-      stroke-dashoffset: $i * $value;
-      }
-    }
-  }
-
-@keyframes nameanimation {
-  100% {
-    stroke-dasharray: 4 $i * $color* 4;
-  }
+.mix:hover {
+  cursor: pointer;
+	color: mix(#fff,  #a039ad, 10%);
+	text-shadow: 
+		0.05em 0.05em 0 mix(#fff, #e91e63, 20%),
+		0.10em 0.10em 0 mix(#fff, hsl(55, 96%, 53%), 20%),
+	
+		0.15em 0.15em 0 mix(#fff, hsl(184, 98%, 50%), 20%),
+    0.20em 0.20em 0 mix(#fff, hsl(164, 80%, 24%), 20%);
 }
