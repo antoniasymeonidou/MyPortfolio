@@ -1,6 +1,6 @@
 ### My Personal Portfolio
 
-<img src="https://docs.google.com/drawings/d/e/2PACX-1vT6bqcP1FD6bcaLDDBhna8QRqjayYvg8xuz5oaKmUyqwSshaTIW0mHNJEgzX5DpsdR_a8s7dyksTMlp/pub?w=650&amp;h=600">
+<img src="https://docs.google.com/drawings/d/e/2PACX-1vQjxG_pvUzFT1o6h_YjETos7kAPNv7tagqQUvcpe9cI2aZ9qk8FoQdS9P8XwiKvTIdOPhlq2PAGYHPK/pub?w=760&h=420">
 
 ### Link
 
