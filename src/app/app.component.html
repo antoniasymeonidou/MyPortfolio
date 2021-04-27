@@ -30,18 +30,19 @@
 </a>				
 </div>
 
-<div class="nav-right nav-menu">
+<div #navbar class="nav-right nav-menu"  >
 <a class="nav-item" href="#about">About</a>
 <a class="nav-item" href="#projects">Projects</a>
 <a class="nav-item" href="#coding-kids">Coding-Kids</a>
 <a class="nav-item" href="#skills">Skills</a>
 </div>
 
-<span class="nav-toggle">
-<span></span>
-<span></span>
-<span></span>
+<span class="nav-toggle" (click)="toggle(navbar)">
+  <span></span>
+  <span></span>
+  <span></span>
 </span>
+
 </nav>
 
 <!-- About Me -->
@@ -71,12 +72,13 @@
     <div class="box project-text">
       <article>
         <div>
-          <figure class="image project-figure" ><a href="https://codepen.io/antoniasymeonidou/pen/dyOBWxw">
-            <img class="acontainer" src="/assets/images/me.png" alt="Image"></a>
+          <figure class="image project-figure" >
+            <img class="acontainer" src="/assets/images/me.png" alt="Image">
           </figure>
         </div>
-        <div>	
-          <p>HTML & SCSS</p>
+        <div >	
+          <a href="https://codepen.io/antoniasymeonidou/pen/dyOBWxw">
+          <p class="fun" >HTML & SCSS</p></a>
         </div>
       </article>
     </div>
@@ -154,9 +156,12 @@
     <div class="box project-text">
       <article>
         <div>
-          <figure class="image project-figure">
-            <img src="assets/img/project-1.jpg" alt="Image">
+          <figure class="image project-figure"><a href="https://payhip.com/b/QVIy">
+            <img  class="bcontainer" src="https://docs.google.com/drawings/d/e/2PACX-1vSfq_UAQaNMWcSpRzkTr5wPJ9fsi2va3BPwXVP6m-0-We28iyaWYb6RpixjH7fhxc_POtsS8p9Rn9fc/pub?w=960&h=720" alt="Image"></a>
           </figure>
+        </div>
+        <div>			
+          <p>Christmas Coding Book - Unplug</p>
         </div>
         <div>			
 <p></p>
@@ -170,7 +175,7 @@
       <article>
         <div>
           <figure class="image project-figure">
-            <img src="assets/img/project-2.jpg" alt="Image">
+            <img src="" alt="Image">
           </figure>
         </div>
         <div>			
@@ -278,5 +283,7 @@
 <section class="section-4 has-text-centered container">
 <a>Created By ©Copyright Nanouu</a>
 </section>
+<script>
+  </script>
 </body>	
 </html>

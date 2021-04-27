@@ -21,8 +21,10 @@ padding: 2rem;
 }
 
 .section-2 {
+
 background-color: hsl(264, 51%, 71%);
 padding: 2rem;
+font-size: 2rem;
 }
 
 .section-3 {
@@ -70,11 +72,13 @@ margin-bottom:15px;
 .project-figure {
 columns:   #0E282E;
 
+
 }
 
 .project-text {
 color:  #0E282E;
-text-align: justify;
+
+text-align: center;
 }
 
 .box {
@@ -82,7 +86,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: transparent;
-border: 2px solid  #034659;
+border: 5px solid  #034659;
 }
 
 .title {
@@ -109,7 +113,7 @@ background-color: transparent;
 
 @media screen and (max-width: 768px) {
 .nav-menu {
-background-color:#59032E;
+background-color: #0E282E;
 }
 
 .nav-toggle:hover {
@@ -122,6 +126,7 @@ background-color: #dfdfdf;
 
 .nav-toggle span:hover {
 background-color: #fff;
+
 }
 
 }
@@ -197,11 +202,24 @@ text-decoration: underline wavy  #9900ffff;
 background: transparent;
 transform: rotate(360deg);
 color: rgb(255, 254, 254);
+}
 
+
+
+
+.acontainer {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 5rem;
+height: 5rem;
+border-radius: 2%;
 }
 
 .acontainer {
-
+display: flex;
+justify-content: center;
+align-items: center;
 width: 10rem;
 height: 10rem;
 border-radius: 2%;
@@ -210,18 +228,18 @@ border-radius: 2%;
 .levels:hover {
 position: relative;
 color: mix(#fff, #fadadd, 10%);
-  font-size: 8rem;
+font-size: 8rem;
 text-shadow: 
-  0.02em 0.02em 0 mix(#fff, #e91e63, 20%),
-  0.04em 0.04em 0 mix(#fff, #F1F0B7, 20%),
-  0.06em 0.06em 0 mix(#fff, #d8bfd8, 20%),
-  0.08em 0.08em 0 mix(#fff, #a4dded, 20%);
+0.02em 0.02em 0 mix(#fff, #e91e63, 20%),
+0.04em 0.04em 0 mix(#fff, #F1F0B7, 20%),
+0.06em 0.06em 0 mix(#fff, #d8bfd8, 20%),
+0.08em 0.08em 0 mix(#fff, #a4dded, 20%);
 }
 
 
 
 .fire:hover {
-  cursor: pointer;
+cursor: pointer;
 color: #741b47ff;
 outline: none;
 cursor: pointer;
@@ -235,39 +253,65 @@ color: white;
 
 @keyframes amazing {
 0%   { 
-  text-shadow: 
-  10px -20px 0 #9900ffff;
+text-shadow: 
+10px -20px 0 #9900ffff;
 }
 25%   { 
-  text-shadow:
-  -10px -20px 0 #9900ffff;
+text-shadow:
+-10px -20px 0 #9900ffff;
 }
 50%   { 
-  text-shadow:
-  10px -20px 0 #9900ffff;
+text-shadow:
+10px -20px 0 #9900ffff;
 }
 75%   { 
-  text-shadow: 
-  -10px -20px 0 #9900ffff;
+text-shadow: 
+-10px -20px 0 #9900ffff;
 }
 100%   { 
-  text-shadow: 
-  10px 20px 0 #9900ffff; 
+text-shadow: 
+10px 20px 0 #9900ffff; 
 }
 }
 
 .mix {
-  text-shadow: 2px 2px 3px black;
-  color: white;
+text-shadow: 2px 2px 3px black;
+color: white;
 }
 
 .mix:hover {
-  cursor: pointer;
-	color: mix(#fff,  #a039ad, 10%);
-	text-shadow: 
-		0.05em 0.05em 0 mix(#fff, #e91e63, 20%),
-		0.10em 0.10em 0 mix(#fff, hsl(55, 96%, 53%), 20%),
-	
-		0.15em 0.15em 0 mix(#fff, hsl(184, 98%, 50%), 20%),
-    0.20em 0.20em 0 mix(#fff, hsl(164, 80%, 24%), 20%);
+cursor: pointer;
+color: mix(#fff,  #a039ad, 10%);
+text-shadow: 
+  0.05em 0.05em 0 mix(#fff, #e91e63, 20%),
+  0.10em 0.10em 0 mix(#fff, hsl(55, 96%, 53%), 20%),
+
+  0.15em 0.15em 0 mix(#fff, hsl(184, 98%, 50%), 20%),
+  0.20em 0.20em 0 mix(#fff, hsl(164, 80%, 24%), 20%);
+}
+
+.fun {
+color: #0E282E;
+background-image: linear-gradient(to right, transparent 50%, hsl(0, 0%, 100%) 50%);
+background-size: 200%;
+transition: background-position 0.5s;
+  &:hover{
+    cursor: pointer;
+    border-radius: 5%;
+    background-position: -100%;
+  }
+}
+
+
+.nav-toggle span:nth-child(1) {
+transition: all 0.5s ease 0.2s;
+}
+.nav-toggle span:nth-child(2) {
+transition: all 0.5s ease 0.4s;
+}
+.nav-toggle span:nth-child(3) {
+transition: all 0.5s ease 0.6s;
+}
+span.fade {
+opacity: 1;
 }

@@ -24,12 +24,18 @@ export class AppComponent {
     this.setColourMode()
   }  
 
+  toggle(navbar: Element) {
+    navbar.classList.toggle("is-active")
+  }
+
   private setColourMode() {
     if (this.dark_mode)
       this.color_mode = "dark"
     else
       this.color_mode = "light"
   }
+
+  
 }
 
 
