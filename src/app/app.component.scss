@@ -3,7 +3,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Orelega+One&display=swap');
 @import url("https://fonts.googleapis.com/css?family=Dekko|Lato:900|Rock+Salt");
 
-
 html, body{
 font-size: 2.5rem;
 background-color: #0E282E; //basic color page for navbar and footer
@@ -24,16 +23,18 @@ padding: 2rem;
 
 background-color: hsl(264, 51%, 71%);
 padding: 2rem;
-font-size: 2rem;
+
 }
 
 .section-3 {
+  color: #0E282E;
 background-color: hsl(55, 97%, 85%);
-padding: 2rem;
+
+
 }
 
 .section-4 {
-font-size: 2rem;
+
 background-color: #0E282E; 
 padding: 0.2rem;
 }
@@ -71,13 +72,10 @@ margin-bottom:15px;
 
 .project-figure {
 columns:   #0E282E;
-
-
 }
 
 .project-text {
 color:  #0E282E;
-
 text-align: center;
 }
 
@@ -86,7 +84,7 @@ display: flex;
 justify-content: center;
 align-items: center;
 background-color: transparent;
-border: 5px solid  #034659;
+border: 5px solid  #0E282E;
 }
 
 .title {
@@ -204,18 +202,6 @@ transform: rotate(360deg);
 color: rgb(255, 254, 254);
 }
 
-
-
-
-.acontainer {
-display: flex;
-justify-content: center;
-align-items: center;
-width: 5rem;
-height: 5rem;
-border-radius: 2%;
-}
-
 .acontainer {
 display: flex;
 justify-content: center;
@@ -223,6 +209,17 @@ align-items: center;
 width: 10rem;
 height: 10rem;
 border-radius: 2%;
+
+}
+
+.bcontainer {
+display: flex;
+justify-content: center;
+align-items: center;
+width: 10rem;
+height: 10rem;
+border-radius: 2%;
+
 }
 
 .levels:hover {
@@ -235,8 +232,6 @@ text-shadow:
 0.06em 0.06em 0 mix(#fff, #d8bfd8, 20%),
 0.08em 0.08em 0 mix(#fff, #a4dded, 20%);
 }
-
-
 
 .fire:hover {
 cursor: pointer;
@@ -283,11 +278,11 @@ color: white;
 cursor: pointer;
 color: mix(#fff,  #a039ad, 10%);
 text-shadow: 
-  0.05em 0.05em 0 mix(#fff, #e91e63, 20%),
-  0.10em 0.10em 0 mix(#fff, hsl(55, 96%, 53%), 20%),
+0.05em 0.05em 0 mix(#fff, #e91e63, 20%),
+0.10em 0.10em 0 mix(#fff, hsl(55, 96%, 53%), 20%),
 
-  0.15em 0.15em 0 mix(#fff, hsl(184, 98%, 50%), 20%),
-  0.20em 0.20em 0 mix(#fff, hsl(164, 80%, 24%), 20%);
+0.15em 0.15em 0 mix(#fff, hsl(184, 98%, 50%), 20%),
+0.20em 0.20em 0 mix(#fff, hsl(164, 80%, 24%), 20%);
 }
 
 .fun {
@@ -295,23 +290,22 @@ color: #0E282E;
 background-image: linear-gradient(to right, transparent 50%, hsl(0, 0%, 100%) 50%);
 background-size: 200%;
 transition: background-position 0.5s;
-  &:hover{
-    cursor: pointer;
-    border-radius: 5%;
-    background-position: -100%;
-  }
+&:hover{
+  cursor: pointer;
+  border-radius: 5%;
+  background-position: -100%;
+}
 }
 
+.fade-in-image {
+animation: fadeIn 5s;
+-webkit-animation: fadeIn 5s;
+-moz-animation: fadeIn 5s;
+-o-animation: fadeIn 5s;
+-ms-animation: fadeIn 5s;
+}
 
-.nav-toggle span:nth-child(1) {
-transition: all 0.5s ease 0.2s;
-}
-.nav-toggle span:nth-child(2) {
-transition: all 0.5s ease 0.4s;
-}
-.nav-toggle span:nth-child(3) {
-transition: all 0.5s ease 0.6s;
-}
-span.fade {
-opacity: 1;
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
 }
