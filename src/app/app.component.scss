@@ -27,7 +27,7 @@ padding: 2rem;
 }
 
 .section-3 {
-  color: #0E282E;
+color: #0E282E;
 background-color: hsl(55, 97%, 85%);
 
 
@@ -40,7 +40,7 @@ padding: 0.2rem;
 }
 
 .section-5 {
-background-color:  #8b1456;
+background-color:  #f3b75b;
 padding: 2rem;
 }
 
@@ -70,21 +70,56 @@ max-height:100px;
 margin-bottom:15px;
 }
 
-.project-figure {
-columns:   #0E282E;
-}
+
 
 .project-text {
 color:  #0E282E;
 text-align: center;
 }
 
-.box {
+.box1 {
+background-color: hsl(264, 51%, 71%);
 display: flex;
 justify-content: center;
 align-items: center;
-background-color: transparent;
-border: 5px solid  #0E282E;
+
+border: 2px solid hsl(264, 51%, 71%);
+box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+  -7px -7px 5px hsl(264, 57%, 77%),
+  inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+  inset 7px 7px 15px rgba(55, 84, 170, 0),
+  inset -7px -7px 20px rgba(255, 255, 255, 0),
+  0px 0px 4px rgba(255, 255, 255, 0) !important;
+}
+
+.box2 {
+background-color: hsl(55, 97%, 85%);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: row;
+border: 2px solid hsl(55, 97%, 85%);
+box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+  -7px -7px 5px hsl(53, 75%, 74%),
+  inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+  inset 7px 7px 15px rgba(55, 84, 170, 0),
+  inset -7px -7px 20px rgba(255, 255, 255, 0),
+  0px 0px 4px rgba(255, 255, 255, 0) !important;
+}
+
+.box3 {
+background-color: #e8e8f3;
+display: flex;
+justify-content: center;
+align-items: center;
+
+border: 2px solid #e8e8f3;
+box-shadow: 7px 7px 15px rgba(55, 84, 170, 0.15),
+  -7px -7px 5px rgba(255, 255, 255, 1),
+  inset 0px 0px 4px rgba(255, 255, 255, 0.2),
+  inset 7px 7px 15px rgba(55, 84, 170, 0),
+  inset -7px -7px 20px rgba(255, 255, 255, 0),
+  0px 0px 4px rgba(255, 255, 255, 0) !important;
 }
 
 .title {
@@ -129,17 +164,8 @@ background-color: #fff;
 
 }
 
-.circle-link {
-position: relative;
-height: 160px;
-width: 160px;
-margin: 40px;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-}
-
 .button1 {
+text-shadow: 2px 2px 3px black;
 width: 5em;
 text-align: center;
 margin: 1em;
@@ -156,6 +182,7 @@ transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
 
 .button2 {
+text-shadow: 2px 2px 3px black;
 width: 5em;
 text-align: center;
 margin: 1em;
@@ -172,6 +199,7 @@ transition: box-shadow 0.1s, background 0.1s, padding 0.1s;
 }
 
 .button3 {
+text-shadow: 2px 2px 3px black;
 width: 5em;
 text-align: center;
 margin: 1em;
@@ -210,6 +238,21 @@ width: 10rem;
 height: 10rem;
 border-radius: 2%;
 
+}
+.dcontainer{
+  
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.ccontainer {
+ 
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 50px;
+  
 }
 
 .bcontainer {
@@ -291,9 +334,9 @@ background-image: linear-gradient(to right, transparent 50%, hsl(0, 0%, 100%) 50
 background-size: 200%;
 transition: background-position 0.5s;
 &:hover{
-  cursor: pointer;
-  border-radius: 5%;
-  background-position: -100%;
+cursor: pointer;
+border-radius: 5%;
+background-position: -100%;
 }
 }
 
