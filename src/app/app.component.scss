@@ -7,6 +7,7 @@ html, body{
 font-size: 2.5rem;
 background-color: #0E282E; //basic color page for navbar and footer
 font-family: 'Nanum Pen Script', cursive;
+
 }
 
 section{
@@ -15,6 +16,7 @@ padding-bottom: 3rem;
 }
 
 .section-1 {
+  cursor: url("/src/assets/images/star.png");
 background-color: hsl(164, 61%, 65%);
 padding: 2rem;
 }
@@ -34,7 +36,7 @@ background-color: hsl(55, 97%, 85%);
 }
 
 .section-4 {
-
+  font-size: 2rem;
 background-color: #0E282E; 
 padding: 0.2rem;
 }
@@ -239,6 +241,8 @@ height: 10rem;
 border-radius: 2%;
 
 }
+
+  
 .dcontainer{
   
   display: flex;
@@ -319,13 +323,13 @@ color: white;
 
 .mix:hover {
 cursor: pointer;
-color: mix(#fff,  #a039ad, 10%);
+color: mix(#fff, #9900ffff, 10%);
 text-shadow: 
-0.05em 0.05em 0 mix(#fff, #e91e63, 20%),
-0.10em 0.10em 0 mix(#fff, hsl(55, 96%, 53%), 20%),
+0.05em 0.05em 0 mix(#fff, rgb(0, 0, 0), 20%),
+0.10em 0.10em 0 mix(#fff, hsl(55, 100%, 50%), 20%),
 
-0.15em 0.15em 0 mix(#fff, hsl(184, 98%, 50%), 20%),
-0.20em 0.20em 0 mix(#fff, hsl(164, 80%, 24%), 20%);
+0.15em 0.15em 0 mix(#fff, hsl(184, 100%, 32%), 20%),
+0.20em 0.20em 0 mix(#fff, hsl(293, 100%, 30%), 20%);
 }
 
 .fun {
@@ -351,4 +355,29 @@ animation: fadeIn 5s;
 @keyframes fadeIn {
 0% {opacity:0;}
 100% {opacity:1;}
+}
+
+
+.star {
+  width: 30px;
+  height: 70px;
+  background: url('https://docs.google.com/drawings/d/e/2PACX-1vSLnLzKLoF9BsNPoSH1Z8jkk4YbLzzfLIDJCLJ5tpw4eq6DlP-tUTZUptL-iYxfhODqMDmnJzja5Rkt/pub?w=760&h=520') repeat;
+ 
+  &.star2 {
+    animation: play 50s linear infinite ; 
+    transform: rotate(90deg);
+  }
+}
+
+@keyframes play {
+  0% {
+    background-position: 0px;
+  }
+  100% {
+    background-position: 720px;
+    
+  }
+  0% {
+    background-position: 0px;
+  }
 }
