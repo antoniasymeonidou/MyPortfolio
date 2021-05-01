@@ -31,7 +31,7 @@ padding: 2rem;
 .section-3 {
 color: #0E282E;
 background-color: hsl(55, 97%, 85%);
-
+padding: 2rem;
 
 }
 
@@ -344,8 +344,31 @@ background-position: -100%;
 }
 }
 
-.imagechange:hover{
-  content: url('https://docs.google.com/drawings/d/e/2PACX-1vQCIx9ABcGTiynP9VPF0oRtGnS5e0e3uPBa45uTK9UqcWNraDQU6KsBtN0EvompIWXf9rQGFZI5ftbH/pub?w=960&h=720');
+
+@keyframes fadeIn {
+0% {opacity:0;}
+100% {opacity:1;}
+}
+
+
+#cf {
+  position:relative;
+  height:281px;
+  width:450px;
+  margin:0 auto;
+}
+
+#cf img {
+  position:absolute;
+  left:0;
+  -webkit-transition: opacity 1s ease-in-out;
+  -moz-transition: opacity 1s ease-in-out;
+  -o-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+#cf img.top:hover {
+  opacity:0;
 }
 
 .star {
