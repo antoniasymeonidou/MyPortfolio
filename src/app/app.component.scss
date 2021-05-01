@@ -344,19 +344,6 @@ background-position: -100%;
 }
 }
 
-.fade-in-image {
-animation: fadeIn 5s;
--webkit-animation: fadeIn 5s;
--moz-animation: fadeIn 5s;
--o-animation: fadeIn 5s;
--ms-animation: fadeIn 5s;
-}
-
-@keyframes fadeIn {
-0% {opacity:0;}
-100% {opacity:1;}
-}
-
 .imagechange:hover{
   content: url('https://docs.google.com/drawings/d/e/2PACX-1vQCIx9ABcGTiynP9VPF0oRtGnS5e0e3uPBa45uTK9UqcWNraDQU6KsBtN0EvompIWXf9rQGFZI5ftbH/pub?w=960&h=720');
 }
